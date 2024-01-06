@@ -14,8 +14,8 @@ const menuItems = [
     href: '/trend',
   },
   {
-    name: 'Discussion',
-    href: '/discussion',
+    name: 'Profile',
+    href: '/profile',
   },
 ]
 
@@ -27,11 +27,12 @@ function Navbar() {
   }
 
   return (
-    <div className="relative w-full bg-white mb-10">
+    <div className="relative w-full bg-white mb-8 mt-5">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
-          
+          <Link href="/">
           <span className="font-bold">SCA<span className='rotate-290'>M</span></span>
+          </Link>
         </div>
         <div className="hidden grow items-start lg:flex">
           <ul className="ml-12 inline-flex space-x-8">
