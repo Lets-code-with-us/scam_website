@@ -1,8 +1,9 @@
-"use client";
+// server component
+
 
 import React from "react";
-import 'animate.css'
-
+import "animate.css";
+import Link from "next/link";
 export default function HeroSection() {
   return (
     <div className="relative w-full mb-32 ">
@@ -36,21 +37,26 @@ export default function HeroSection() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl animate__animated animate__fadeInLeft animate__delay-1s">
-              Lorem ipsum dolor sit amet consectetur dicta.
+              Welcome to ScamAlerts.com
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600  animate__animated animate__fadeIn animate__delay-2s">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              In a world driven by technology and interconnectedness, staying
+              vigilant against evolving scams is crucial. At ScamAlerts.com, we
+              are dedicated to keeping you informed about the latest types of
+              scams circulating globally. Our mission is to empower you with
+              knowledge, arm you against potential threats, and foster a
+              community that stands united against fraudulent activities.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-2 animate__animated animate__fadeInUpBig animate__delay-2s">
+              <Link href="/profile">
               
               <button
                 type="button"
                 className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-              >
+                >
                 Get Started
               </button>
+                </Link>
             </div>
           </div>
         </div>

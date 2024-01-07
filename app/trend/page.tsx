@@ -2,7 +2,7 @@ import React from 'react'
 import TrendingCard from '@/components/TrendingCard'
 function page() {
   return (
-    <div className='grid grid-cols-2 items-center justify-center p-10 gap-4'>
+    <div className='flex flex-col items-center justify-center gap-10'>
       {Array.from({ length: 10 }).map((_, i) => (
         <TrendingCard key={i} />
       )
