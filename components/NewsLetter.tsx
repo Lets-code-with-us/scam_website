@@ -1,5 +1,6 @@
 import React from 'react'
 import { Star } from 'lucide-react'
+import SubmitButton from '@/clientComponents/submit'
 
 function NewsLetter() {
   return (
@@ -19,12 +20,9 @@ function NewsLetter() {
                 type="email"
                 placeholder="Email"
               ></input>
-              <button
-                type="button"
-                className="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-              >
-                Subscribe
-              </button>
+             <div>
+              <SubmitButton/>
+             </div>
             </div>
           </form>
           <p className="mt-2">
